@@ -1,0 +1,25 @@
+.marcheur {
+  height: 33vh;
+  position: relative;
+  bottom: 0%;
+  top: 20vh;
+  background: url(img/got.png)no-repeat;
+@media screen and (min-width: $large) {
+  display: none
+  }
+}
+.saison {
+    text-align: center;
+    color: #fff;
+    font-size: 80px;
+    p {
+    padding-top: 40vh;
+    }
+    img {
+        width: 250px;
+    }
+}
+
+
+
+

@@ -1,0 +1,52 @@
+.jon {
+	height: 100vh;
+	.aboutme {
+	    position: relative;
+	  	top: 0;
+	  	height: 50vh;
+	  	background: url(img/snow.jpg)no-repeat;
+	    background-size: cover;
+	}
+	.about {
+	    width: 100%;
+	    color: #fff;
+	    text-align: center;
+		height: 50vh;
+		img {
+			width: 100px;
+		}
+	}
+	.logo_stark {
+		position: absolute;
+    	top: 42vh;
+    	left: 5%;
+		img {
+			width: 250px;
+			border-radius: 300px;
+			border: 1px solid #fff;
+		}
+		@media screen and (min-width: $large) {
+		  width: 150px;
+		  }
+	}
+	p {
+          padding: 3% 10%;
+          @media screen and (min-width: $large) {
+			  padding: 1% 30%;
+			  }
+      }
+      span{
+      	width: 10%;
+      	height: 10px;
+      	border-bottom: 1px solid #fff;
+      }
+      h1{
+      	text-transform: uppercase;
+      	letter-spacing: 2px;
+      	padding-top: 5%;
+      	font-family: 'Cinzel', serif;
+      }
+      @media screen and (min-width: $large) {
+		  height: 160vh;
+		  }
+}

@@ -1,0 +1,409 @@
+/**
+ * styles.scss
+ * ---
+ * Main `sass` file. Import here `sass` files
+ */
+/**
+ * modules/variables
+ * ---
+ */
+/**
+ * Typography
+ */
+/**
+ * Colors
+ */
+/**
+ * Grid
+ */
+/**
+ * modules/mixins
+ * ---
+ */
+/**
+ * modules/fonts
+ * ---
+ * Declare fonts here
+ */
+/*
+@font-face {
+  font-family: "Font-Name";
+  src: url("fonts/font-name.eot");
+  src: url("fonts/font-name.eot?#iefix") format("embedded-opentype"),
+    url("fonts/font-name.woff") format("woff"),
+    url("fonts/font-name.ttf") format("truetype"),
+    url("fonts/font-name.svg#font-name") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+*/
+/**
+ * partials/reset
+ * ---
+ * Reset file
+ * NOTE: also `normalize.css` is used
+ */
+*,
+*:after,
+*:before {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Open Sans", sans-serif;
+  font-size: 140%;
+  line-height: 1.5;
+  color: #444;
+  background-color: #fff;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+a {
+  color: #444;
+  text-decoration: none;
+}
+a:focus, a:hover {
+  text-decoration: underline;
+}
+
+input[type="text"],
+input[type="search"] {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+::-moz-selection {
+  background-color: #04A4CC;
+  color: #fff;
+  text-shadow: none;
+}
+
+::selection {
+  background-color: #04A4CC;
+  color: #fff;
+  text-shadow: none;
+}
+
+.marcheur {
+  height: 33vh;
+  position: relative;
+  bottom: 0%;
+  top: 20vh;
+  background: url(img/got.png) no-repeat;
+}
+@media screen and (min-width: 1280px) {
+  .marcheur {
+    display: none;
+  }
+}
+
+.saison {
+  text-align: center;
+  color: #fff;
+  font-size: 80px;
+}
+.saison p {
+  padding-top: 40vh;
+}
+.saison img {
+  width: 250px;
+}
+
+body {
+  background: #000;
+  margin: 0 auto;
+  font-size: 30px;
+  font-family: 'Cinzel', serif;
+}
+@media screen and (min-width: 1280px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+section {
+  position: relative;
+  min-height: 50vh;
+  margin-top: -3px;
+}
+section.two {
+  background-color: #000;
+}
+
+h1 {
+  color: white;
+  font-weight: 500;
+  font-size: 60px;
+  text-align: center;
+  margin: 0;
+  line-height: 70px;
+  -webkit-user-select: none;
+}
+
+h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 45px;
+}
+
+#page {
+  background-image: url("https://4.bp.blogspot.com/-RGdg1HwjcN0/V0MfveH5tnI/AAAAAAAAV9U/JuZAFpkJmHkhrLHTY3Nzt--f1_D4QUDRACLcB/s1600/s1.png"), url("https://3.bp.blogspot.com/-lLYG_aPYaWI/V0MfvZui2cI/AAAAAAAAV9Q/ivLLay21G6IKLLGEI-bHgpzmPRHFubhwgCLcB/s1600/s2.png"), url("https://3.bp.blogspot.com/-mPW9Z5fvV5w/V0MfvZ1kmnI/AAAAAAAAV9Y/qU7_F2J0XP4bXNi3rIyV55Y1z9RyTRoqQCLcB/s1600/s3.png");
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  -webkit-animation: snow 12s linear infinite;
+  -ms-animation: snow 12s linear infinite;
+  animation: snow 12s linear infinite;
+}
+
+@keyframes snow {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+  50% {
+    background-position: 500px 500px, 100px 200px, -100px 150px;
+  }
+  100% {
+    background-position: 500px 1000px, 200px 400px, -100px 300px;
+  }
+}
+@-webkit-keyframes snow {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+  50% {
+    background-position: 500px 500px, 100px 200px, -100px 150px;
+  }
+  100% {
+    background-position: 500px 1000px, 200px 400px, -100px 300px;
+  }
+}
+@-ms-keyframes snow {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+  50% {
+    background-position: 500px 500px, 100px 200px, -100px 150px;
+  }
+  100% {
+    background-position: 500px 1000px, 200px 400px, -100px 300px;
+  }
+}
+.jon {
+  height: 100vh;
+}
+.jon .aboutme {
+  position: relative;
+  top: 0;
+  height: 50vh;
+  background: url(img/snow.jpg) no-repeat;
+  background-size: cover;
+}
+.jon .about {
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  height: 50vh;
+}
+.jon .about img {
+  width: 100px;
+}
+.jon .logo_stark {
+  position: absolute;
+  top: 42vh;
+  left: 5%;
+}
+.jon .logo_stark img {
+  width: 250px;
+  border-radius: 300px;
+  border: 1px solid #fff;
+}
+@media screen and (min-width: 1280px) {
+  .jon .logo_stark {
+    width: 150px;
+  }
+}
+.jon p {
+  padding: 3% 10%;
+}
+@media screen and (min-width: 1280px) {
+  .jon p {
+    padding: 1% 30%;
+  }
+}
+.jon span {
+  width: 10%;
+  height: 10px;
+  border-bottom: 1px solid #fff;
+}
+.jon h1 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-top: 5%;
+  font-family: 'Cinzel', serif;
+}
+@media screen and (min-width: 1280px) {
+  .jon {
+    height: 160vh;
+  }
+}
+
+.flex_skills {
+  position: relative;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-align-items: flex-center;
+  -ms-flex-align: center;
+  -webkit-box-align: flex-center;
+  align-items: flex-center;
+}
+
+.card {
+  height: 400px;
+  width: 400px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 2 auto;
+  -ms-flex: 0 2 auto;
+  flex: 0 2 auto;
+  position: relative;
+  display: inline-block;
+  margin: 3%;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.card .front, .card .back {
+  height: inherit;
+  width: inherit;
+  border-radius: 300px;
+  top: 0;
+  left: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.card .text {
+  color: #fff;
+  text-align: center;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 5vh;
+  padding: 2% 0%;
+}
+@media screen and (min-width: 1280px) {
+  .card .text {
+    top: 13vh;
+  }
+}
+.card .front {
+  z-index: 2;
+}
+.card .back {
+  position: absolute;
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+.card.flip {
+  /* CSS to make element flip on click */
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.skill1 {
+  background: url(img/youknownothing.jpg) no-repeat;
+  background-size: cover;
+}
+
+.skill2 {
+  background: url(img/mellisandre.jpg) no-repeat;
+  background-size: cover;
+  -webkit-filter: blur;
+  filter: blur;
+}
+
+.skill3 {
+  background: url(img/sam.jpg) no-repeat;
+  background-size: cover;
+}
+
+.skill4 {
+  background: url(img/Olly.jpg) no-repeat;
+  background-size: cover;
+}
+
+.skill5 {
+  background: url(img/wall.jpg) no-repeat;
+  background-size: cover;
+}
+
+.skill6 {
+  background: url(img/white.jpg) no-repeat;
+  background-size: cover;
+}
+
+.skill7 {
+  background: url(img/stark.jpg) no-repeat;
+  background-size: cover;
+}
+
+.skill8 {
+  background: url(img/wolf.png) no-repeat;
+  background-size: cover;
+}
+
+.skill9 {
+  background: url(img/jondead.jpg) no-repeat;
+  background-size: cover;
+}
+
+.skill10 {
+  background: url(img/revive.jpg) no-repeat;
+  background-size: cover;
+}
+
+.skill11 {
+  background: url(img/ygriddead.jpg) no-repeat;
+  background-size: cover;
+}
+
+.skill12 {
+  background: url(img/ramsay.jpg) no-repeat;
+  background-size: cover;
+}
+
+.tap {
+  height: 5vh;
+  text-align: center;
+}
+.tap img {
+  width: 100px;
+  z-index: 555;
+}

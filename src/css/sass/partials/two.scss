@@ -1,0 +1,120 @@
+.flex_skills{
+	position: relative;
+	display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: flex-center;
+    -ms-flex-align: center;
+    align-items: flex-center;
+}
+
+.card {
+  height: 400px;
+  width: 400px;
+  flex: 0 2 auto;
+  position: relative;
+  display: inline-block;
+  margin: 3%;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  .front, .back {
+    height: inherit;
+    width: inherit;
+    border-radius: 300px;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+  }
+  .text{
+  	color: #fff;
+  	text-align: center;
+  	position: relative;
+  	background-color: rgba(0, 0, 0, 0.3);
+  	top: 5vh;
+  	padding: 2% 0%;
+    @media screen and (min-width: $large) {
+      top: 13vh;
+      }
+  }
+  .front { 
+    z-index: 2;
+  } 
+  .back {
+  	position: absolute;
+    transform: rotateY( 180deg );
+  }
+  &.flip { /* CSS to make element flip on click */
+    transform: rotateY( 180deg );
+  }
+}
+
+
+.skill1 {
+	background: url(img/youknownothing.jpg)no-repeat;
+	background-size: cover;
+}
+.skill2 {
+	background: url(img/mellisandre.jpg)no-repeat;
+	background-size: cover;
+	filter: blur;
+}
+.skill3 {
+	background: url(img/sam.jpg)no-repeat;
+	background-size: cover;
+}
+.skill4 {
+	background: url(img/Olly.jpg)no-repeat;
+	background-size: cover;
+}
+.skill5 {
+	background: url(img/wall.jpg)no-repeat;
+	background-size: cover;
+}
+.skill6 {
+	background: url(img/white.jpg)no-repeat;
+	background-size: cover;
+}
+.skill7 {
+	background: url(img/stark.jpg)no-repeat;
+	background-size: cover;
+}
+.skill8 {
+	background: url(img/wolf.png)no-repeat;
+	background-size: cover;
+}
+.skill9 {
+	background: url(img/jondead.jpg)no-repeat;
+	background-size: cover;
+}
+.skill10 {
+	background: url(img/revive.jpg)no-repeat;
+	background-size: cover;
+}
+.skill11 {
+	background: url(img/ygriddead.jpg)no-repeat;
+	background-size: cover;
+}
+.skill12 {
+	background: url(img/ramsay.jpg)no-repeat;
+	background-size: cover;
+}
+.tap {
+  height: 5vh;
+  text-align: center;
+  img {
+    width: 100px;
+        z-index: 555;
+  }
+}
